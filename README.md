@@ -51,4 +51,20 @@ git config --system --unset credential.helper
 # git push origin master : (충돌 오류 발생)
     --> solution : --force
 
+
+# git commit , add delete
+    git add test; git commit -sm "test"
+    git push origin master
+    git reset HEAD~1
+    git push origin master --force
+
+    ! reset HEAD~N HEAD에서 N번째 RESET한다.
+
 # git Pull-request
+
+    // git branch -> 현재 브랜치 확인
+    // git checkout (branch name)
+    // git checkout -- (file name) : 복구용으로 가능
+        -b (branch name)
+    // branch : 백업용으로 사용
+    // 
